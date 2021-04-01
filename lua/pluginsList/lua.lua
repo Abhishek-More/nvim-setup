@@ -28,5 +28,6 @@ return require("packer").startup(
         use {"nvim-lua/popup.nvim"}
         use {"unblevable/quick-scope"}
         use {"windwp/nvim-ts-autotag"}
+        use {"tversteeg/registers.nvim"}
     end
 )
