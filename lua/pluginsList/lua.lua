@@ -27,6 +27,6 @@ return require("packer").startup(
         use {"nvim-telescope/telescope-media-files.nvim"}
         use {"nvim-lua/popup.nvim"}
         use {"unblevable/quick-scope"}
-        
+        use {"windwp/nvim-ts-autotag"}
     end
 )
