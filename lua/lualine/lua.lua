@@ -7,7 +7,7 @@ require("lualine").setup{
   sections = {
     lualine_c = {
       {'filename'}, 
-      {'diagnostics', sources = {'nvim_lsp'}}
+      --{'diagnostics', sources = {'nvim_lsp'}, color = {fg = '#c792ea', bg = "#000000", gui = 'style'}}
     },
     lualine_x = {},
   }

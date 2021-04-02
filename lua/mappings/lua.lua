@@ -6,8 +6,14 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+
+--remap leader
+vim.g.mapleader = " "
+
 -- keybind list
 map("", "<leader>c", '"+y')
+map("n", "<leader>w", ":w<CR>")
+map("n", "<leader>q", ":wq<CR>")
 
 -- open terminals  
 map("n", "<C-b>" , [[<Cmd> vnew term://bash<CR>]] , opt) -- split term vertically , over the right  

@@ -41,7 +41,6 @@ cmd("hi VertSplit guibg=NONE")
 cmd("hi DiffAdd guifg=#c792ea guibg = none")
 cmd("hi DiffChange guifg=#c792ea guibg = none")
 cmd("hi DiffModified guifg=#c792ea guibg = none")
-cmd("hi EndOfBuffer guifg=#282c34")
 
 cmd("hi TelescopeBorder   guifg=#3e4451")
 cmd("hi TelescopePromptBorder   guifg=#3e4451")
@@ -65,6 +64,7 @@ require("lspkind").init(
 )
 
 cmd("hi CustomExplorerBg guibg=#242830")
+vim.cmd(":set relativenumber")
 
 vim.api.nvim_exec(
     [[
