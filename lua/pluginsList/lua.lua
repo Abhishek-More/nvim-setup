@@ -29,5 +29,7 @@ return require("packer").startup(
         use {"windwp/nvim-ts-autotag"}
         use {"tversteeg/registers.nvim"}
         use {'hoob3rt/lualine.nvim'}
+        use {'norcalli/snippets.nvim'}
+        use {'SirVer/ultisnips'}
     end
 )

@@ -38,7 +38,7 @@ vim.cmd('nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>')
 vim.cmd('nnoremap <silent> ca :Lspsaga code_action<CR>')
 vim.cmd('nnoremap <silent> K :Lspsaga hover_doc<CR>')
 
---Web Dev
+--Web 
 require "lspconfig".tsserver.setup {}
 require "lspconfig".cssls.setup {}
 require "lspconfig".html.setup {}
