@@ -31,5 +31,6 @@ return require("packer").startup(
         use {'hoob3rt/lualine.nvim'}
         use {'norcalli/snippets.nvim'}
         use {'SirVer/ultisnips'}
+        use {'andweeb/presence.nvim'}
     end
 )

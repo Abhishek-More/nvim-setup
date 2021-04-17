@@ -27,7 +27,7 @@ require("telescope").setup {
             }
         },
         file_sorter = require "telescope.sorters".get_fuzzy_file,
-        file_ignore_patterns = {},
+        file_ignore_patterns = { "node%_modules/.*" },
         generic_sorter = require "telescope.sorters".get_generic_fuzzy_sorter,
         shorten_path = true,
         winblend = 0,
@@ -72,6 +72,7 @@ vim.api.nvim_set_keymap("n", "fb", [[<Cmd>lua require('telescope.builtin').buffe
 vim.api.nvim_set_keymap("n", "fh", [[<Cmd>lua require('telescope.builtin').help_tags()<CR>]], opt)
 vim.api.nvim_set_keymap("n", "fo", [[<Cmd>lua require('telescope.builtin').oldfiles()<CR>]], opt)
 vim.api.nvim_set_keymap("n", "fg", [[<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]], opt)
+vim.api.nvim_set_keymap("n", "fe", [[<Cmd>lua require('telescope.builtin').lsp_code_actions()<CR>]], opt)
 
 vim.api.nvim_set_keymap("n", "fm", [[<Cmd> Neoformat<CR>]], opt)
 

@@ -34,6 +34,10 @@ g.mapleader = " "
 require("treesitter.lua")
 require("mappings.lua")
 
+--Discord Rich Presence
+require('presence.lua')
+
+
 -- highlights
 cmd("hi LineNr guibg=NONE")
 cmd("hi SignColumn guibg=NONE")
