@@ -32,5 +32,6 @@ return require("packer").startup(
         use {'norcalli/snippets.nvim'}
         use {'SirVer/ultisnips'}
         use {'andweeb/presence.nvim'}
+        use {'glepnir/dashboard-nvim'}
     end
 )

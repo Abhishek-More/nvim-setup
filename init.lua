@@ -26,9 +26,9 @@ cmd "syntax enable"
 cmd "syntax on"
 
 g.auto_save = 1
-g.indentLine_enabled = 1
-g.indentLine_char_list = {"▏"}
-
+g.indentLine_enabled = 0
+--g.indentLine_char_list = {"▏"}
+g.indentLine_char_list = {""}
 g.mapleader = " "
 
 require("treesitter.lua")
@@ -36,6 +36,9 @@ require("mappings.lua")
 
 --Discord Rich Presence
 require('presence.lua')
+
+--Dashboard:
+require("dashboard.lua")
 
 
 -- highlights
