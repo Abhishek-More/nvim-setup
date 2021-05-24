@@ -19,7 +19,7 @@ require "colorizer".setup()
 
 local cmd = vim.cmd
 local g = vim.g
-local indent = 2
+local indent = 4
 
 cmd "colorscheme base16-onedark"
 cmd "syntax enable"
@@ -72,7 +72,8 @@ require("lspkind").init(
 
 cmd("hi CustomExplorerBg guibg=#242830")
 vim.cmd(":set relativenumber")
-
+vim.cmd(":set termguicolors")
+vim.cmd(":hi link goSpaceError NONE")
 vim.api.nvim_exec(
     [[
 augroup NvimTree 

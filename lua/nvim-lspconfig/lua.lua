@@ -49,3 +49,7 @@ require "lspconfig".cmake.setup {}
 
 --Python
 require'lspconfig'.pyls.setup {}
+
+--Go
+require'lspconfig'.gopls.setup{}
+

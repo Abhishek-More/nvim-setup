@@ -33,5 +33,7 @@ return require("packer").startup(
         use {'SirVer/ultisnips'}
         use {'andweeb/presence.nvim'}
         use {'glepnir/dashboard-nvim'}
+        use {'folke/lsp-colors.nvim'}
+        use {"kdav5758/TrueZen.nvim"}
     end
 )
